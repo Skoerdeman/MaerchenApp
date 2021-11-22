@@ -1,8 +1,11 @@
+import '../f_kassi/f_kassi_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../froschkoenig/froschkoenig_widget.dart';
 import '../haenselund_gretel/haenselund_gretel_widget.dart';
+import '../hu_gassi/hu_gassi_widget.dart';
 import '../rotkaeppchen/rotkaeppchen_widget.dart';
+import '../rotkaeppchen_assi/rotkaeppchen_assi_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -52,8 +55,11 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                           onTap: () async {
                             await Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => FroschkoenigWidget(),
+                              PageTransition(
+                                type: PageTransitionType.fade,
+                                duration: Duration(milliseconds: 0),
+                                reverseDuration: Duration(milliseconds: 0),
+                                child: FroschkoenigWidget(),
                               ),
                             );
                           },
@@ -68,8 +74,11 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                           onTap: () async {
                             await Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => RotkaeppchenWidget(),
+                              PageTransition(
+                                type: PageTransitionType.fade,
+                                duration: Duration(milliseconds: 0),
+                                reverseDuration: Duration(milliseconds: 0),
+                                child: RotkaeppchenWidget(),
                               ),
                             );
                           },
@@ -84,8 +93,11 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                           onTap: () async {
                             await Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => HaenselundGretelWidget(),
+                              PageTransition(
+                                type: PageTransitionType.fade,
+                                duration: Duration(milliseconds: 0),
+                                reverseDuration: Duration(milliseconds: 0),
+                                child: HaenselundGretelWidget(),
                               ),
                             );
                           },
@@ -149,7 +161,7 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                               await Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => FroschkoenigWidget(),
+                                  builder: (context) => FKassiWidget(),
                                 ),
                               );
                             },
@@ -160,17 +172,43 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Image.network(
-                            'https://picsum.photos/seed/895/600',
-                            width: 100,
-                            height: 100,
-                            fit: BoxFit.cover,
+                          InkWell(
+                            onTap: () async {
+                              await Navigator.push(
+                                context,
+                                PageTransition(
+                                  type: PageTransitionType.fade,
+                                  duration: Duration(milliseconds: 0),
+                                  reverseDuration: Duration(milliseconds: 0),
+                                  child: RotkaeppchenAssiWidget(),
+                                ),
+                              );
+                            },
+                            child: Image.network(
+                              'https://picsum.photos/seed/895/600',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                          Image.network(
-                            'https://picsum.photos/seed/50/600',
-                            width: 100,
-                            height: 100,
-                            fit: BoxFit.cover,
+                          InkWell(
+                            onTap: () async {
+                              await Navigator.push(
+                                context,
+                                PageTransition(
+                                  type: PageTransitionType.fade,
+                                  duration: Duration(milliseconds: 0),
+                                  reverseDuration: Duration(milliseconds: 0),
+                                  child: HuGassiWidget(),
+                                ),
+                              );
+                            },
+                            child: Image.network(
+                              'https://picsum.photos/seed/50/600',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
                           )
                         ],
                       ),
