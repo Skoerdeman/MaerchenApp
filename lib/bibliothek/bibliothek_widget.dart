@@ -11,7 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class BibliothekWidget extends StatefulWidget {
-  BibliothekWidget({Key key}) : super(key: key);
+  const BibliothekWidget({Key key}) : super(key: key);
 
   @override
   _BibliothekWidgetState createState() => _BibliothekWidgetState();
@@ -107,7 +107,7 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                             height: 100,
                             fit: BoxFit.cover,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -209,7 +209,7 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                               height: 100,
                               fit: BoxFit.cover,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -245,7 +245,7 @@ class _BibliothekWidgetState extends State<BibliothekWidget> {
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

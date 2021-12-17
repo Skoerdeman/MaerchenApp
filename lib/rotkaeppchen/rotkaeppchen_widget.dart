@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RotkaeppchenWidget extends StatefulWidget {
-  RotkaeppchenWidget({Key key}) : super(key: key);
+  const RotkaeppchenWidget({Key key}) : super(key: key);
 
   @override
   _RotkaeppchenWidgetState createState() => _RotkaeppchenWidgetState();
@@ -44,7 +44,7 @@ class _RotkaeppchenWidgetState extends State<RotkaeppchenWidget> {
               Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [],
-              )
+              ),
             ],
           ),
         ),

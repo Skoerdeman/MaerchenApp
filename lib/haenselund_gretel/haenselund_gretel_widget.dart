@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HaenselundGretelWidget extends StatefulWidget {
-  HaenselundGretelWidget({Key key}) : super(key: key);
+  const HaenselundGretelWidget({Key key}) : super(key: key);
 
   @override
   _HaenselundGretelWidgetState createState() => _HaenselundGretelWidgetState();
@@ -44,7 +44,7 @@ class _HaenselundGretelWidgetState extends State<HaenselundGretelWidget> {
               Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [],
-              )
+              ),
             ],
           ),
         ),

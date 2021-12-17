@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FroschkoenigWidget extends StatefulWidget {
-  FroschkoenigWidget({Key key}) : super(key: key);
+  const FroschkoenigWidget({Key key}) : super(key: key);
 
   @override
   _FroschkoenigWidgetState createState() => _FroschkoenigWidgetState();
@@ -43,7 +43,7 @@ class _FroschkoenigWidgetState extends State<FroschkoenigWidget> {
               Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [],
-              )
+              ),
             ],
           ),
         ),
