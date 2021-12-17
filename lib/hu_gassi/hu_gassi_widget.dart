@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HuGassiWidget extends StatefulWidget {
-  HuGassiWidget({Key key}) : super(key: key);
+  const HuGassiWidget({Key key}) : super(key: key);
 
   @override
   _HuGassiWidgetState createState() => _HuGassiWidgetState();
@@ -49,7 +49,7 @@ class _HuGassiWidgetState extends State<HuGassiWidget> {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.62,
               fit: BoxFit.cover,
-            )
+            ),
           ],
         ),
       ),

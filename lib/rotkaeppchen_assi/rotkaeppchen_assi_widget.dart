@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RotkaeppchenAssiWidget extends StatefulWidget {
-  RotkaeppchenAssiWidget({Key key}) : super(key: key);
+  const RotkaeppchenAssiWidget({Key key}) : super(key: key);
 
   @override
   _RotkaeppchenAssiWidgetState createState() => _RotkaeppchenAssiWidgetState();
@@ -49,7 +49,7 @@ class _RotkaeppchenAssiWidgetState extends State<RotkaeppchenAssiWidget> {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.62,
               fit: BoxFit.cover,
-            )
+            ),
           ],
         ),
       ),
